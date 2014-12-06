@@ -1,0 +1,12 @@
+{
+	"api":[
+		{
+			"name":"测试，这个路由配置会重写、覆盖默认配置；test, this route will rewrite/overwrite the default route config.",
+			"rule":"/api/test/useCustom",
+			"useLocal":true,
+			"remoteUrl":"",
+			"localPath":"./data/test_custom.js",
+			"method":"GET"
+		}
+	]
+}

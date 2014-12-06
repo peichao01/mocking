@@ -1,6 +1,6 @@
 {
   "customConfigFile":"./imock.custom.json",
-  "api_remote_origin":"http://dev.iqianggou.lab",
+  "api_remote_origin":"http://test.baidu.com",
   "api":[
 	  {
 		  "type":"comment",
