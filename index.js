@@ -26,8 +26,8 @@ fs.readJson(_path.join(process.cwd(), 'package.json'), function(err, config){
 	}));
 
 	// API
-	app.use('/api', api);
-	app.use('/api_baidu', api);
+	app.use('/api', api(config));
+	app.use('/api_baidu', api(config));
 
 	app.listen(port);
 	console.log('server is running on port: ' + port);

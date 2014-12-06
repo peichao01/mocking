@@ -1,6 +1,6 @@
 {
   "name": "mocking",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "mocking, mock api requests for frontend & native developers, have local & remote mode.",
   "main": "server.api.js",
   "scripts": {
@@ -39,6 +39,12 @@
     "underscore": "^1.7.0"
   },
   "mocking":{
-	"port":"8081"
+	"port":"8081",
+    "res":{
+      "headers":{
+	    "Access-Control-Allow-Origin":"{{req.headers.origin}}",
+	    "Access-Control-Allow-Headers":"lng,lat"
+      }
+    }
   }
 }
