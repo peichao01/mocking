@@ -11,7 +11,7 @@ var app = express();
 
 
 fs.readJson(_path.join(process.cwd(), 'package.json'), function(err, config){
-	var port = config.imock.port;
+	var port = config.mocking.port;
 
 	// 把请求的路打印出来
 	app.use(function(req, res, next){

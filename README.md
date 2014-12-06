@@ -18,7 +18,7 @@ download and run it, you will know all details. so easy!
 Install
 ----------
 ```shell
-npm install mocking --save-dev
+$ npm install mocking --save-dev
 ```
 
 Config
@@ -28,11 +28,15 @@ edit `mocking.json` or add and edit `mocking.custom.json`. see the example `mock
 Running
 -------------
 ```shell
-npm start
+$ npm start
 ```
 
 Usage
 -----
+
+set `port` at package.json->mocking->port
+
+
 mocking.json
 
 ```javascript
