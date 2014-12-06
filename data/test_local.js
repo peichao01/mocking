@@ -11,7 +11,8 @@ module.exports = function(req, res){
 			},
 			"data": {
 				"desc":"test local mode.",
-				"name":"this is GET"
+				"name":"this is GET",
+				"id": req.params.order_id
 			}
 		}
 	}

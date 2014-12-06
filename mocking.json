@@ -1,5 +1,5 @@
 {
-  "customConfigFile":"./imock.custom.json",
+  "customConfigFile":"./mocking.custom.json",
   "api_remote_origin":"http://test.baidu.com",
   "api":[
 	  {
@@ -17,7 +17,7 @@
 	  },
 	  {
 		  "name":"测试，访问本地服务，使用'useLocal'来控制；test, use the local server.",
-		  "rule":"/api/test/local",
+		  "rule":"/api/test/local/{order_id}",
 		  "useLocal":true,
 		  "remoteUrl":"",
 		  "localPath":"./data/test_local.js",

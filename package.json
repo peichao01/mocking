@@ -1,5 +1,5 @@
 {
-  "name": "imock-js",
+  "name": "mocking",
   "version": "1.0.0",
   "description": "imock, mock api requests for frontend & native developers, have local & remote mode.",
   "main": "server.api.js",
@@ -15,7 +15,14 @@
     "url": "https://github.com/peichao01/imock.git"
   },
   "keywords": [
-    "imock"
+    "mock",
+	"api",
+    "mock server",
+    "mock api",
+    "mocking",
+    "http",
+    "test",
+    "development"
   ],
   "author": "peichao <380692952@qq.com>",
   "license": "ISC",

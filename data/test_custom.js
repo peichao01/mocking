@@ -10,7 +10,7 @@ module.exports = function(req, res){
 				"alert": ""
 			},
 			"data": {
-				"desc":"test the custom config, use `imock.custom.json` to write ur custom config.",
+				"desc":"test the custom config, use `mocking.custom.json` to write ur custom config.",
 				"name":"this is GET"
 			}
 		}
@@ -27,7 +27,7 @@ module.exports = function(req, res){
 				"alert": ""
 			},
 			"data":{
-				"desc":"test the custom config, use `imock.custom.json` to write ur custom config.",
+				"desc":"test the custom config, use `mocking.custom.json` to write ur custom config.",
 				"name":"this is POST"
 			}
 		}
