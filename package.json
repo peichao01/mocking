@@ -1,6 +1,6 @@
 {
   "name": "mocking",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "mocking, mock api requests for frontend & native developers, have local & remote mode.",
   "main": "server.api.js",
   "scripts": {
