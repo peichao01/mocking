@@ -1,0 +1,35 @@
+{
+  "customConfigFile":"./imock.custom.json",
+  "api_remote_origin":"http://dev.iqianggou.lab",
+  "api":[
+	  {
+		  "type":"comment",
+		  "name":"这是注释，会被忽略；this is a comment, will be ignored."
+	  },
+	  {
+		  "type":"test",
+		  "name":"测试，访问远程的服务，使用'useLocal'来控制；test, use the remote server api, can use `useLocal` to switch remote and local mode.",
+		  "rule":"/api/test/remote",
+		  "useLocal":false,
+		  "remoteUrl":"http://www.weather.com.cn/data/sk/101010100.html",
+		  "localPath":null,
+		  "method":"GET"
+	  },
+	  {
+		  "name":"测试，访问本地服务，使用'useLocal'来控制；test, use the local server.",
+		  "rule":"/api/test/local",
+		  "useLocal":true,
+		  "remoteUrl":"",
+		  "localPath":"./data/test_local.js",
+		  "method":"GET"
+	  },
+	  {
+		  "name":"测试，这个路由配置会被自定义的路径重写；test, this route config will be rewrite by the custom config.",
+		  "rule":"/api/test/useCustom",
+		  "useLocal":false,
+		  "remoteUrl":"http://xxx.com/api",
+		  "localPath":"",
+		  "method":"GET"
+	  }
+  ]
+}
