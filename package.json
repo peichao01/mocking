@@ -1,50 +1,51 @@
 {
-  "name": "mocking",
-  "version": "1.0.5",
-  "description": "mocking, mock api requests for frontend & native developers, have local & remote mode.",
-  "main": "server.api.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "bin":{
-	"mocking":"./bin/mocking"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/peichao01/mocking.git"
-  },
-  "keywords": [
-    "mock",
-	"imock",
-	"api",
-    "mock server",
-    "mock api",
-    "mocking",
-    "http",
-    "test",
-    "development"
-  ],
-  "author": "peichao <380692952@qq.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/peichao01/mocking/issues"
-  },
-  "homepage": "https://github.com/peichao01/mocking",
-  "dependencies": {
-    "async": "^0.9.0",
-    "body-parser": "^1.9.2",
-    "express": "^4.10.2",
-    "fs-extra": "^0.12.0",
-    "underscore": "^1.7.0"
-  },
-  "mocking":{
-	"port":"8081",
-    "res":{
-      "headers":{
-	    "Access-Control-Allow-Origin":"{{req.headers.origin}}",
-	    "Access-Control-Allow-Headers":"lng,lat"
-      }
-    }
-  }
+	"name": "mocking",
+	"version": "1.0.7",
+	"description": "mocking, mock api requests for frontend & native developers, have local & remote mode.",
+	"main": "server.api.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"bin":{
+		"mocking":"./bin/mocking"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/peichao01/mocking.git"
+	},
+	"keywords": [
+		"mock",
+		"imock",
+		"api",
+		"mock server",
+		"mock api",
+		"mocking",
+		"http",
+		"test",
+		"development"
+	],
+	"author": "peichao <380692952@qq.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/peichao01/mocking/issues"
+	},
+	"homepage": "https://github.com/peichao01/mocking",
+	"dependencies": {
+		"async": "^0.9.0",
+		"body-parser": "^1.9.2",
+		"express": "^4.10.2",
+		"fs-extra": "^0.12.0",
+		"underscore": "^1.7.0"
+	},
+	"mocking":{
+		"port":"8081",
+		"res":{
+			"headers":{
+				"Access-Control-Allow-Origin":"{{req.headers.origin}}",
+				"Access-Control-Allow-Headers":"lng,lat",
+				"Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
+			}
+		}
+	}
 }
