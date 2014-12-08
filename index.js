@@ -4,6 +4,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser')
 var api = require('./lib/api');
 var fs = require('fs-extra')
 var _path = require('path')
@@ -15,9 +16,11 @@ fs.readJson(_path.join(process.cwd(), 'package.json'), function(err, config){
 
 	// 把请求的路打印出来
 	app.use(function(req, res, next){
-		console.log('[REQUEST URL]: ' + req.originalUrl);
+		console.log('[REQUEST URL] ['+req.method+']: ' + req.originalUrl);
 		next();
 	});
+
+	app.use(cookieParser())
 
 	// 解析POST的数据
 	app.use(bodyParser.json());     // to support JSON-encoded bodies
